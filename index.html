@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Cloud Segura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo-sidebar">Cloud Segura</h1>
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="#login">1. Inicio de sesión</a></li>
+            <li><a href="#galeria">2. Galería principal</a></li>
+            <li><a href="#registro">3. Registro de imagen</a></li>
+            <li><a href="#detalle">4. Detalle de imagen</a></li>
+            <li><a href="#usuarios">5. Gestión de usuarios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="login" class="caja">
+            <h2>1. Inicio de sesión</h2>
+            <form action="#galeria">
+                <input type="email" placeholder="Usuario o correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+
+        <section id="galeria" class="caja">
+            <h2>2. Galería principal</h2>
+            <div class="barra-filtros">
+                <input type="search" placeholder="Buscar imagen...">
+                <select>
+                    <option>Todas las categorías</option>
+                    <option>Arquitectura</option>
+                    <option>Paisajes</option>
+                    <option>Urbano</option>
+                </select>
+            </div>
+            <div class="cuadricula-galeria">
+                <article>
+                    <img src="https://picsum.photos/seed/arq1/400/260?grayscale" alt="Arquitectura">
+                    <span class="etiqueta">Arquitectura</span>
+                    <h3>Estructura Moderna</h3>
+                    <p>Autor: Juan Pablo Andino</p>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/seed/pai2/400/260?grayscale" alt="Paisajes">
+                    <span class="etiqueta">Paisajes</span>
+                    <h3>Montañas en Niebla</h3>
+                    <p>Autor: Pedro Carranza</p>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/seed/urb3/400/260?grayscale" alt="Urbano">
+                    <span class="etiqueta">Urbano</span>
+                    <h3>Ciudad Nocturna</h3>
+                    <p>Autor: Mateo Cantos</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="registro" class="caja">
+            <h2>3. Registro de imagen</h2>
+            <form action="#galeria">
+                <input type="file" accept="image/*" required>
+                <input type="text" placeholder="Título o nombre de la imagen" required>
+                <select required>
+                    <option value="">Seleccionar categoría</option>
+                    <option>Arquitectura</option>
+                    <option>Paisajes</option>
+                    <option>Urbano</option>
+                </select>
+                <textarea rows="3" placeholder="Descripción de la imagen" required></textarea>
+                <button type="submit">Registrar imagen</button>
+            </form>
+        </section>
+
+        <section id="detalle" class="caja detalle-grid">
+            <img src="https://picsum.photos/seed/arq1/600/400?grayscale" alt="Detalle">
+            <div>
+                <span class="etiqueta">Arquitectura</span>
+                <h2>4. Detalle: Estructura Moderna</h2>
+                <p>Fotografía en blanco y negro almacenada de forma segura en la nube.</p>
+                <p><strong>Usuario responsable:</strong> Juan Pablo Andino (juanpandinoa@gmail.com)</p>
+            </div>
+        </section>
+
+        <section id="usuarios" class="caja">
+            <h2>5. Gestión de usuarios</h2>
+            <table>
+                <thead>
+                    <tr><th>Nombre</th><th>Correo</th><th>Rol</th><th>Estado</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Juan Pablo Andino</td><td>juanpandinoa@gmail.com</td><td>Admin</td><td>Activo</td></tr>
+                    <tr><td>Pedro Carranza</td><td>pecarranzatr@uide.edu.ec</td><td>Editor</td><td>Activo</td></tr>
+                    <tr><td>Mateo Cantos</td><td>mathewsteve1312@hotmail.com</td><td>Usuario</td><td>Inactivo</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
